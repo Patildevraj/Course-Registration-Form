@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Registration Page</title>
+    <style>
+        img {
+            width: -webkit-fill-available;
+        }
+
+        button {
+            border-radius: 15px;
+            border-spacing: 8px;
+        }
+
+        button#submit {
+            background-color: cadetblue;
+        }
+
+        button#register {
+            background-color: coral;
+            margin-left: 76px;
+        }
+
+        .container-fluid {
+            display: grid;
+        }
+
+        .form-control {
+            width: 65%;
+            background-color: #21252999;
+            border-color: #fff;
+            color: #fff;
+        }
+
+        body {
+            background-image: url(img/bg2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .bg-dark {
+            --bs-bg-opacity: 0.7;
+        }
+
+        .bradius {
+            border-radius: 55px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container img-fluid">
+        <div class="row">
+            <div class="col-lg-3 text-white">
+            </div>
+            <div class="col-lg-6 bg-dark text-white p-5 bradius">
+
+                <form action="action.php" method="post">
+                    <h1>Registration Form</h1>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">Name:</label>
+                        <input type="text" name="name" class="form-control" id="name" placeholder="Devraj Patil" />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">course:</label>
+                        <select class="form-control">
+                            <option id="#course">full stack</option>
+                            <option id="#course">testing</option>
+                            <option id="#course" selected>machine learning</option>
+                            <option id="#course">data analyst</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-check-label">Gender:</label>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                            <label class="form-check-label" for="radio2">male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input" disabled>
+                            <label class="form-check-label">female</label>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">Contact no. :</label>
+                        <input type="number" name="tel" class="form-control" id="mobile" value="mobile" />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">Username:</label>
+                        <input type="email" name="mail" class="form-control" id="email" value=" " />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label class="form-label">Password:</label>
+                        <input type="password" name="pass" class="form-control" value="" />
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <input type="checkbox" class="form-check-input" selected="select" />I agree to above condition
+                        <br />
+                        <button type="submit" class="btn btn-primary" id="submit" value="SignUp">SignUp</button>
+                        <button type="reset" class="btn btn-primary" id="register" value="SignUp">Register</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-3 text-white">
+                <!-- <img src="img/course-img.jpg" alt="course"> -->
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
